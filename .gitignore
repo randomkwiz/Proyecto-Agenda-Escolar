@@ -40,3 +40,4 @@ Javadoc/element-list
 *.png
 *.css
 *.kotlin_module
+.idea/
