@@ -29,6 +29,34 @@ fin
  */
 public class main {
     public static void main(String[] args) {
+        boolean isCuentaNueva = false;
+        int opcion = 0, int opcionMenu = 0;
 
+        //pedirValidarUsuarioRegistradoCuentaNueva
+
+        if (isCuentaNueva){
+            //crearCuentaNueva
+        }else{
+            do{
+                //iniciarSesion
+                //mostrarMenuPedirValidarOpcionMenu
+
+                if (opcion != 0 ){
+                    switch (opcionMenu){
+                        case 1:
+                            //verNotas
+                            break;
+                        case 2:
+                            //introducirNota
+                            break;
+                        case 3:
+                            //eliminarNota
+                            break;
+                    }
+
+                }
+            }while(opcion != 0);
+
+        }
     }
 }
