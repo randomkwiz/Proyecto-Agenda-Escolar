@@ -30,8 +30,15 @@ fin
 public class main {
     public static void main(String[] args) {
         boolean isCuentaNueva = false;
-        int opcion = 0, int opcionMenu = 0;
+        int opcion = 2;
+        int opcionMenu = 2;
+        Gestion gestion = new Gestion();
+        Validar validar = new Validar();
+        NotaImpl nota = null;
+        UsuarioImpl usuario = new UsuarioImpl("Angela V"); //de momento solo habra un usuario
 
+        System.out.println("Agenda Escolar");
+        System.out.println("En proceso");
         //pedirValidarUsuarioRegistradoCuentaNueva
 
         if (isCuentaNueva){
@@ -48,6 +55,10 @@ public class main {
                             break;
                         case 2:
                             //introducirNota
+                                //pedir nota
+                            nota = validar.pedirValidarNota();
+                                //introducir nota
+                            gestion.insertarNotaEnBBDD(nota);
                             break;
                         case 3:
                             //eliminarNota
